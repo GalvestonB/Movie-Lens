@@ -1,58 +1,34 @@
-**Description**
+Description
 
-**Context**
-The number of restaurants in New York is increasing day by day. Lots of students and busy professionals rely on those restaurants due to their hectic lifestyles. Online food delivery service is a great option for them. It provides them with good food from their favorite restaurants. A food aggregator company FoodHub offers access to multiple restaurants through a single smartphone app.
+MovieLens Project 
 
-The app allows the restaurants to receive a direct online order from a customer. The app assigns a delivery person from the company to pick up the order after it is confirmed by the restaurant. The delivery person then uses the map to reach the restaurant and waits for the food package. Once the food package is handed over to the delivery person, he/she confirms the pick-up in the app and travels to the customer's location to deliver the food. The delivery person confirms the drop-off in the app after delivering the food package to the customer. The customer can rate the order in the app. The food aggregator earns money by collecting a fixed margin of the delivery order from the restaurants.
+lens-826308_1920.jpg
 
-**Objective**
-The food aggregator company has stored the data of the different orders made by the registered customers in their online portal. They want to analyze the data to get a fair idea about the demand of different restaurants which will help them in enhancing their customer experience. Suppose you are hired as a Data Scientist in this company and the Data Science team has shared some of the key questions that need to be answered. Perform the data analysis to find answers to these questions that will help the company to improve the business. 
+Business Context and Problem Statement: 
 
-**Data Description**
-The data contains the different data related to a food order. The detailed data dictionary is given below.
+MovieLens is a company in the internet and entertainment domain providing an online database of information related to films, television series, and online streaming content including cast, production crew, trivia, ratings, fan, and critical reviews. Every year in collaboration with a guest curator, MovieLens publish their annual insights based on a theme providing a comprehensive view of a topic. The company is planning to bring out the "Movie Talkies: Classic" edition this year. The idea is to connect with viewers who have strong movie preferences as well as promote classic movies to attract newer customers and expand their viewer base.
 
-**Data Dictionary**
+Problem Statement:
 
-_order_id:_ Unique ID of the order
-_customer_id:_ ID of the customer who ordered the food
-_restaurant_name:_ Name of the restaurant
-_cuisine_type:_ Cuisine ordered by the customer
-_cost:_ Cost of the order
-_day_of_the_week:_ Indicates whether the order is placed on a weekday or weekend (The weekday is from Monday to Friday and the weekend is Saturday and Sunday)
-_rating:_ Rating given by the customer out of 5
-_food_preparation_time:_ Time (in minutes) taken by the restaurant to prepare the food. This is calculated by taking the difference between the timestamps of the restaurant's order confirmation and the delivery person's pick-up confirmation.
-_delivery_time:_ Time (in minutes) taken by the delivery person to deliver the food package. This is calculated by taking the difference between the timestamps of the delivery person's pick-up confirmation and drop-off information
- 
-==============================
 
-Getting organized
+In order to create the "Movie Talkies: Classic" edition, the challenge lies in effectively analyzing and presenting a wealth of information about movies from a bygone era. The core issue is understanding the characteristics of these classic movies, user interests, and the relationship between user demographics and movie ratings. Without clear visuals, it's difficult to identify patterns, draw meaningful conclusions, and engage the audience on a deeper level. You have been hired as a Data Analyst by the company, to create a report that provides a detailed analysis of the classic movies that were released till 2000. The dashboard should provide insights on the following questions:
 
-Project Organization
-------------
+How many movies were released until 2000? How many distinct genres have come up till the year 2020?
+How many users are part of the MovieLens community, and what is the gender diversity in this community?
+What are the genre preferences of different genders, highlighting user engagement?
+What's the average user rating for classic movies, reflecting overall reception? How does the distribution of movies vary across different genres?
+How does the demographic distribution of the users look like across gender? Where do these users live?
+How do users across different age groups and professions engage with classic movies, revealing generational interests?
+Which classic movies and genres are top-rated? How do these ratings differ based on user age and occupation?
+Is there a link between user age and the ratings they provide for classic movies, providing insights into age-related viewing habits? How do the average ratings vary over the years based on the genre considered?
+Project Guidelines: 
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+You can use upto 3 pages in the report for this project. 
+Ensure that the questions are answered sequentially and each visual includes the Question number in its header. 
+Each report page must have appropriate slicers and navigation items
+You can refer to the Solution approach page and the Report Template pdf file for hints and ideas on how to create the visuals - however, feel free to explore creating visuals through measures and formulae. You can also provide additional insights and use creative visuals. 
+The report has to be submitted as a .pbix file for evaluation
+Submission Guidelines
 
---------
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+Save the report in a .pbix format
+Submit the .pbix file for evaluation 
